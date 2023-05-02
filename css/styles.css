@@ -1,0 +1,356 @@
+body    {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #f5f3f7;
+}
+
+/**********BACKGROUND SHAPES**********/
+
+.light-oblong {
+    background-color: #eee5f3;
+    border-radius: 250px 250px 0% 0% / 250px 250px 0% 0%;
+    height: 550px;
+    width: 525px;
+  }
+
+.light-oblong-crop {
+    width: 350px;
+    overflow: hidden;
+    grid-column-end: -1;
+    grid-row-end: 4;
+    place-self: end;
+}
+
+.purple-oblong-crop {
+    width: 400px;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    place-self: start;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.purple-oblong {
+    background-image: linear-gradient(to bottom left, #e942ff 0%, #8838ff 50%);
+    border-radius: 0% 0% 250px 250px / 0 0 250px 250px;
+    height: 550px;
+    width: 500px;
+    vertical-align: bottom;
+    flex-shrink: 0;
+  }
+
+/**********DIV STYLES**********/
+
+.att-container {
+    color: #a39daa;
+    font-size: .8rem;
+    grid-area: 3 / 1 / 4 / 5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.simple-booking-container {
+    display: flex;
+    grid-column-start: 4;
+    justify-self: start;
+    align-self: center;
+    z-index: 1;
+}
+
+.simple-booking {
+    flex-basis: 475px;
+    margin-right: 18%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 23% auto 1fr 5fr;
+    grid-template-rows: auto;
+    height: 100vh;
+}
+
+.cell-phone-container {
+    grid-column-start: 2;
+    z-index: 1;
+    place-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cell-phone {
+    background-color: #f5f3f7;
+    border-color: white;
+    border-radius:10% 10% 10% 10% / 5% 5% 5% 5%;
+    border-style: solid;
+    border-width: 15px;
+    box-shadow: 20px 20px 50px grey;
+    padding: 0;
+    height: 500px;
+    width: 250px;
+}
+
+.content-area   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dog-pics {
+    padding: 10px 10px 5px 0px;
+    margin: 0;
+    text-align: right;
+}
+
+.sbook-div {
+    width: 500px;
+  }
+
+.top-purple-bar {
+    background-image: linear-gradient(to left, #e942ff 0%, #8838ff 60%);
+    border-radius: 15px 15px 10px 10px / 15px 15px 10px;
+    margin-bottom: 3px;
+    padding: 0 5px 5px 5px;
+}
+
+.pbflex {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: inline;
+    line-height: .7;
+    padding: 5px;
+    flex: 1;
+    margin-top: 5px;
+    color: #f5f3f7;
+}
+
+.header:nth-of-type(1) {
+    flex: .05;
+}
+
+.header:nth-of-type(2) {
+    flex: .05;
+}
+
+.header:nth-of-type(4) {
+    flex: .05;
+}
+
+.top-white-bar {
+    background-color: white;
+    border-radius: 0% 0% 15% 15% / 0% 0% 90% 90%;
+    height: 20px;
+    margin: 0 auto;
+    width: 130px;
+}
+
+.purple-chat {
+    background-color: #eee5f3;
+    border-radius: 15px 15px 15px 5px / 15px 15px 15px 5px;
+    color: #9241c8;
+    font-size: .5rem;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 125px;
+}
+
+.chat-white {
+    background-color: white;
+    border-radius: 15px 15px 5px 15px /15px 15px 5px 15px;
+    font-size: .5rem;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 115px;
+    color: gray;
+}
+
+.containerfor-chatrightwhite {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-options {
+    background-image: linear-gradient(to right, #e942ff 0%, #8838ff 80%);
+    border-radius: 15px 15px 15px 5px / 15px 15px 15px 5px;
+    height: 40px;
+    width: 160px;
+    font-size: .5rem;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.whte-circle {
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.time {
+    display: inline-block;
+    color: #eee5f3;
+    padding-left: 10px;
+    width: 75px;
+}
+
+.price {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    font-size: .8rem;
+    text-align: right;
+    width: 50px;
+}
+
+.chat-input {
+    background-color: white;
+    border-radius: 30px / 30px;
+    margin: 15px 10px;
+    height: 35px;
+    color: lightgrey;
+    font-size: .6rem;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.chat-button {
+    display: table;
+    border-radius: 50%;
+    background-color: #3e2753;
+    position: relative;
+    right: -100px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 0;
+    padding: 0;
+    color: white;
+}
+
+.chat-button-child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/**********FONT STYLES**********/
+
+.sbook-span p {
+    font-size: 16px;
+}
+
+.simple-booking h1 {
+    color: #3e2753;
+    font-weight: 500;
+    font-size: 2.7rem;
+}
+
+.simple-booking p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #a39daa;
+}
+
+.top-purple-bar h3 {
+    color: #eee5f3;
+    font: 400;
+    font-size: .6rem;
+    line-height: 0; 
+}
+
+.top-purple-bar h4 {
+    color: #eee5f3;
+    font: 500;
+    font-size: .5rem;    
+    line-height: 0;
+}
+
+.att-container a {
+    color: #8838ff;
+}
+
+.sam-green {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.available {
+    font-size: .5rem;
+}
+
+/**********IMAGE STYLES**********/
+
+.avatar {
+    border-radius: 50%;
+    border: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 20px;
+}
+
+.dog-img    {
+    border-radius: 10px;
+    width: 40px;
+    margin: 2px;
+}
+
+@media (max-width: 1000px) {
+    
+    .simple-booking-container {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        padding-bottom: 75px;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .grid {
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .cell-phone-container {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .att-container {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .simple-booking {
+        flex-basis: 60%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .light-oblong-crop {
+        width: 50%;
+    }
+    
+    .purple-oblong-crop {
+        width: 50%;
+    }
+
+  }
